@@ -33,6 +33,14 @@ function draw(){
             document.getElementById("play").innerHTML="Song Name = BELIEVER";
         }
     }
+    if(rwc>0.2){
+        circle(rwx,rwy,20);
+        song.stop();
+        if(song1_status=="false"){
+            song1.play();
+            document.getElementById("play").innerHTML="Song Name = FADED";
+        }
+    }
 }
 
 function modeloaded(){
